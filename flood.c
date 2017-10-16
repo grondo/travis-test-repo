@@ -6,10 +6,10 @@ void
 main (void)
 {
   int i, n;
-  char buffer[20480];
+  char buffer[80480];
 
   for (i = 0; i < sizeof(buffer); i++)
-    buffer[i] = 'x';
+    buffer[i] = '=';
 
   buffer[0] = '[';
   buffer[sizeof(buffer)-1] = ']';
