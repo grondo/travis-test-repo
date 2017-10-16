@@ -3,4 +3,4 @@ compiler:
   - gcc
 script:
   - make
-  - ( ./flood & ./flood )
+  - ( ./flood & ./flood & ./flood & ./flood &)
