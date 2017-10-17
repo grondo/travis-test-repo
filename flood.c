@@ -6,7 +6,7 @@ void
 main (void)
 {
   int i, n;
-  char buffer[20480];
+  char buffer[10240];
 
   for (i = 0; i < sizeof(buffer); i++)
     buffer[i] = '=';
@@ -14,7 +14,7 @@ main (void)
   buffer[0] = '[';
   buffer[sizeof(buffer)-1] = ']';
 
-  for (i = 0; i < 100; i++)
+  for (i = 0; i < 50; i++)
     {
       n = write (1, buffer, sizeof(buffer));
       if (n < 0)

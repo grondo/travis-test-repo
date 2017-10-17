@@ -4,4 +4,4 @@ compiler:
   - gcc
 script:
   - make
-  - ( ./flood & ./flood & ./flood ) && wait
+  - ( ./flood & ./flood & ) && wait
