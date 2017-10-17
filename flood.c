@@ -6,15 +6,15 @@ void
 main (void)
 {
   int i, n;
-  char buffer[10240];
+  char buffer[8192];
 
   for (i = 0; i < sizeof(buffer); i++)
-    buffer[i] = '=';
+    buffer[i] = 'x';
 
   buffer[0] = '[';
   buffer[sizeof(buffer)-1] = ']';
 
-  for (i = 0; i < 50; i++)
+  for (i = 0; i < 256; i++)
     {
       n = write (1, buffer, sizeof(buffer));
       if (n < 0)

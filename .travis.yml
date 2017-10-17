@@ -4,5 +4,5 @@ compiler:
   - gcc
 script:
   - make
-  - ./flood & ./flood & ; wait
+  - ./flood & ./flood & ./flood & ./flood & ./flood & wait
   - echo "All tests completed"
